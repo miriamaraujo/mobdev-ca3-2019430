@@ -3,6 +3,36 @@
 
 /** Ionic CSS Variables **/
 :root {
+
+
+  --ion-background-color: #000000;
+  --ion-text-color: #fff;
+  --ion-tab-bar-background: var(--ion-color-primary);
+
+  ion-tab-button {
+    --color-selected: #ffee00;
+  }
+  --ion-text-color-rgb: 255, 255, 255;
+
+  ion-card {
+    --color: #fff;
+  }
+
+  ion-item {
+    --border-color: var(--ion-color-light);
+    --detail-push-color: var(--ion-color-light);
+  }
+
+  ion-icon {
+      --ion-background-color: #ffee00;
+      --color-selected: #ffee00;
+  }
+
+  ion-searchbar{
+      --color: #ffffff;
+  }
+
+
   /** primary **/
   --ion-color-primary: #3880ff;
   --ion-color-primary-rgb: 56, 128, 255;
@@ -224,5 +254,9 @@
     --ion-toolbar-background: #1f1f1f;
 
     --ion-tab-bar-background: #1f1f1f;
+  }
+
+  ion-title.title-large {
+    --color: white;
   }
 }

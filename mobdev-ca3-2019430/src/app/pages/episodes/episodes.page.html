@@ -1,9 +1,18 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>episodes</ion-title>
-  </ion-toolbar>
+	<ion-toolbar color="dark">
+		<ion-title>Episodes</ion-title>
+	</ion-toolbar>
 </ion-header>
 
 <ion-content>
+	<ion-item lines="none" padding="">
+		<img src="https://fbcover.com/covers-images/download/breaking_bad_all_hail_the_king.jpg">
+		</ion-item>
 
+		<ion-list>
+			<ion-item button detail lines="inset" *ngFor="let episode of episodes | async"
+				(click)="openDetails(episode)">
+				{{ episode.title }}
+			</ion-item>
+		</ion-list>
 </ion-content>

@@ -1,9 +1,19 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>characters</ion-title>
-  </ion-toolbar>
+ <ion-toolbar color="dark">
+   <ion-title>Characters</ion-title>
+ </ion-toolbar>
 </ion-header>
 
 <ion-content>
+<ion-item lines="none" padding="">
+		<img src="https://i0.wp.com/metro.co.uk/wp-content/uploads/2019/09/breaking-bad-main-e809.jpg?quality=90&strip=all&zoom=1&resize=644%2C379&ssl=1">
+		</ion-item>
 
+    
+        
+   <ion-list>
+       <ion-item button detail lines="inset" *ngFor="let character of characters | async" (click)="openDetails(character)">
+       {{ character.name }}
+       </ion-item>
+   </ion-list>
 </ion-content>
