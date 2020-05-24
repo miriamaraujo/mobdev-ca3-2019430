@@ -1,11 +1,14 @@
 {
-  "name": "mobdev-ca3-2019430",
+  "name": "braking-bad-2019430",
   "version": "0.0.1",
+   "engines": {
+    "node": "12.16.x"
+  },
   "author": "Ionic Framework",
   "homepage": "https://ionicframework.com/",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "node server.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -29,11 +32,9 @@
     "cordova-sqlite-storage": "^5.0.0",
     "rxjs": "~6.5.1",
     "tslib": "^1.10.0",
-    "zone.js": "~0.10.2"
-  },
-  "devDependencies": {
+    "zone.js": "~0.10.2",
     "@angular-devkit/build-angular": "~0.901.5",
-    "@angular/cli": "9.1.7",
+    "@angular/cli": "~9.1.5",
     "@angular/compiler": "~9.1.6",
     "@angular/compiler-cli": "~9.1.6",
     "@angular/language-service": "~9.1.6",
@@ -54,6 +55,9 @@
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
     "typescript": "~3.8.3"
+  },
+  "devDependencies": {
+    
   },
   "description": "An Ionic project",
   "cordova": {
