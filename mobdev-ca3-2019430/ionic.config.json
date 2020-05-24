@@ -1,0 +1,7 @@
+{
+  "name": "mobdev-ca3-2019430",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
